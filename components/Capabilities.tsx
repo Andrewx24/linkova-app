@@ -1,13 +1,20 @@
 // components/Capabilities.tsx
 export default function Capabilities() {
-  const capabilities = [
+  const industries = [
     {
-      name: "Natural Language Processing",
+      name: "Automotive Sector",
       description:
-        "Agents that understand and respond to natural language, enabling human-like interactions with your systems.",
+        "Luxury and exotic car dealers, service centers, and performance shops trust Linkova to automate:",
+      listItems: [
+        "Quoting & proposal generation",
+        "Lead follow-up & CRM syncing",
+        "Invoice & payment workflows",
+        "Review generation & service updates",
+        "VIP customer campaigns",
+      ],
       icon: (
         <svg
-          className="h-6 w-6 text-purple-500"
+          className="h-6 w-6 text-[#892257]"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -16,18 +23,25 @@ export default function Capabilities() {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
-            d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
+            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
           />
         </svg>
       ),
     },
     {
-      name: "Tool Integration",
+      name: "Yacht & Marine Sector",
       description:
-        "AI agents that can interact with your existing software tools, websites, and APIs to accomplish complex tasks.",
+        "We help boat dealerships, charter services, and marinas increase revenue and streamline operations through:",
+      listItems: [
+        "Automated charter quoting & booking",
+        "Lead capture from listings and inquiries",
+        "Client onboarding and agreements",
+        "Post-sale service reminders",
+        "Upsell campaigns for VIP customers",
+      ],
       icon: (
         <svg
-          className="h-6 w-6 text-blue-500"
+          className="h-6 w-6 text-[#892257]"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -36,18 +50,24 @@ export default function Capabilities() {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
-            d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+            d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z"
           />
         </svg>
       ),
     },
     {
-      name: "Autonomous Decision Making",
+      name: "Private Aviation & Jet Sector",
       description:
-        "Advanced reasoning capabilities that enable agents to make decisions and solve problems independently.",
+        "For jet brokers, charter operators, and aircraft service firms, our AI systems:",
+      listItems: [
+        "Auto-generate flight quotes & purchase docs",
+        "Handle client intake and compliance workflows",
+        "Send pre-flight updates and post-service follow-ups",
+        "Power intelligent lead routing and communication",
+      ],
       icon: (
         <svg
-          className="h-6 w-6 text-pink-500"
+          className="h-6 w-6 text-[#892257]"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -56,7 +76,7 @@ export default function Capabilities() {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
-            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+            d="M5 17H4a2 2 0 01-2-2V5a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2h-1m-6 0v1a3 3 0 11-6 0v-1m6 0H9"
           />
         </svg>
       ),
@@ -68,34 +88,40 @@ export default function Capabilities() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center">
           <div className="py-1 px-3 mb-4 inline-block rounded-full bg-gray-800">
-            <p className="text-xs font-medium text-purple-400">
-              Agent Capabilities
-            </p>
+            <p className="text-xs font-medium text-[#892257]">Industries</p>
           </div>
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Advanced Agent Technologies
+            Who We Serve
           </h2>
           <p className="mt-4 text-lg leading-8 text-gray-300">
-            Cutting-edge capabilities that power our autonomous AI agents.
+            We specialize in building AI-powered business solutions for
+            high-value industries where speed, personalization, and efficiency
+            drive revenue.
           </p>
-          <div className="mt-2 h-1 w-16 bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 mx-auto"></div>
+          <div className="mt-2 h-1 w-16 bg-[#892257] mx-auto"></div>
         </div>
 
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {capabilities.map((capability) => (
+          {industries.map((industry) => (
             <div
-              key={capability.name}
-              className="flex flex-col bg-gray-900 rounded-2xl p-8 relative overflow-hidden transition duration-300 hover:shadow-md hover:shadow-purple-900/10 hover:-translate-y-1"
+              key={industry.name}
+              className="flex flex-col bg-gray-900 rounded-2xl p-8 relative overflow-hidden transition duration-300 hover:shadow-md hover:shadow-[#892257]/10 hover:-translate-y-1"
             >
               <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-gray-800">
-                {capability.icon}
+                {industry.icon}
               </div>
               <h3 className="text-xl font-semibold text-white">
-                {capability.name}
+                {industry.name}
               </h3>
-              <p className="mt-2 text-gray-400 flex-grow">
-                {capability.description}
-              </p>
+              <p className="mt-2 text-gray-400">{industry.description}</p>
+              <ul className="mt-4 space-y-2 text-gray-400 text-sm">
+                {industry.listItems.map((item, index) => (
+                  <li key={index} className="flex items-start">
+                    <span className="text-[#892257] mr-2">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

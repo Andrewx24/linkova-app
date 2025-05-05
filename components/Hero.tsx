@@ -22,30 +22,31 @@ export default function Hero() {
         <div className="text-center">
           <div className="py-2 px-4 mb-6 inline-block rounded-full bg-gray-800/80 backdrop-blur-sm">
             <p className="text-sm font-medium text-gray-200">
-              Autonomous AI Agents
+              Autonomous AI Solutions
             </p>
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-4">
-            Intelligent{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-pink-500 text-transparent bg-clip-text">
-              AI Agents
+            Custom-Built{" "}
+            <span className="bg-gradient-to-r from-[#892257] to-[#b42e6f] text-transparent bg-clip-text">
+              AI Solutions
             </span>{" "}
-            for Enterprise
+            That Drive Profits
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-300 max-w-3xl mx-auto">
-            Custom autonomous AI agents that work 24/7 to solve complex
-            problems, automate workflows, and drive business growth.
+            Fully Coded AI systems designed to boost your bottom line - automate
+            operations, eliminate bottlenecks, and scale faster with intelligent
+            AI workflows.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6 relative z-10">
-  <Link
-    href="/contact"
-    role="button"
-    aria-label="Contact Us"
-    className="inline-block rounded-full bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 px-8 py-3 text-sm font-semibold text-white shadow-sm hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all duration-200 relative z-20"
-  >
-    Contact Us
-  </Link>
-</div>
+            <Link
+              href="/contact"
+              role="button"
+              aria-label="Contact Us"
+              className="inline-block rounded-full bg-gradient-to-r from-[#892257] to-[#242425] px-8 py-3 text-sm font-semibold text-white shadow-sm hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all duration-200 relative z-20"
+            >
+              Contact Us
+            </Link>
+          </div>
         </div>
       </div>
     </div>

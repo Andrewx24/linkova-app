@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -19,14 +20,19 @@ export default function Navbar() {
   return (
     <header className="fixed w-full bg-opacity-90 bg-[#13141e] backdrop-blur-sm z-50">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-6"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
+        <div className="flex lg:flex-1 ml-[-0.5rem]">
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-purple-400 via-blue-500 to-pink-500 text-transparent bg-clip-text">
-              LINKOVA
-            </span>
+            <Image
+              src="/Linkova.io.png"
+              alt="Linkova"
+              width={150}
+              height={40}
+              className="h-auto"
+              priority
+            />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -70,7 +76,7 @@ export default function Navbar() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
             href="/portal"
-            className="rounded-md px-4 py-2 text-sm font-medium text-white bg-purple-600 hover:bg-purple-700"
+            className="rounded-md px-4 py-2 text-sm font-medium text-[#892257] bg-white hover:bg-gray-100 transition-colors duration-300"
           >
             Client Portal
           </Link>
@@ -85,10 +91,15 @@ export default function Navbar() {
           />
           <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#13141e] px-6 py-6 sm:max-w-sm">
             <div className="flex items-center justify-between">
-              <Link href="/" className="-m-1.5 p-1.5">
-                <span className="text-xl font-extrabold tracking-tight bg-gradient-to-r from-purple-400 via-blue-500 to-pink-500 text-transparent bg-clip-text">
-                  LINKOVA
-                </span>
+              <Link href="/" className="-m-1.5">
+                <Image
+                  src="/Linkova.io.png"
+                  alt="Linkova"
+                  width={120}
+                  height={30}
+                  className="h-auto"
+                  priority
+                />
               </Link>
               <button
                 type="button"
@@ -129,7 +140,7 @@ export default function Navbar() {
                 <div className="py-6">
                   <Link
                     href="/portal"
-                    className="block rounded-md px-4 py-2 text-sm font-medium text-white bg-purple-600 hover:bg-purple-700 text-center"
+                    className="block rounded-md px-4 py-2 text-sm font-medium text-[#892257] bg-white hover:bg-gray-100 transition-colors duration-300 text-center"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Client Portal

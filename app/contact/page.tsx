@@ -134,7 +134,7 @@ export default function Contact() {
             <div className="flex justify-center pt-4">
               <button
                 type="submit"
-                className="rounded-full bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 px-10 py-3 text-sm font-semibold text-white shadow-sm hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600 transition-all duration-200"
+                className="rounded-full bg-gradient-to-r from-[#892257] to-[#242425] px-10 py-3 text-sm font-semibold text-white shadow-sm hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600 transition-all duration-200"
               >
                 Submit
               </button>
@@ -149,7 +149,7 @@ export default function Contact() {
               href="mailto:info@linkova.io"
               className="text-blue-400 hover:text-blue-300"
             >
-              info@linkova.io
+              support@linkova.io
             </a>
           </p>
         </div>
